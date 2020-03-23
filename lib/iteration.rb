@@ -29,10 +29,10 @@ def find_greater_pair(src)
   count = 0
   while count < src.length do
     count1 = 0
-    array[count][count1] = 0
+    array[count] = src[count][count1]
     while count1 < src[count].length do
-      if src[count][count1] > array[count][count1]
-        array[count][count1] = src[count][count1]
+      if src[count][count1] > array[count]
+        array[count] = src[count][count1]
       end
       count1 += 1
     end
