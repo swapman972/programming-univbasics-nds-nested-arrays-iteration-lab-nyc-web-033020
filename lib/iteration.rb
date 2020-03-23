@@ -12,7 +12,7 @@ def join_ingredients(src)
   while count < src.length do
     count1 = 0
     while count1 < ((src[count].length) - 1) do
-      array << "I love " + src[count][count1] + " and " + src[count][count1+1] " on my pizza"
+      array << "I love " + src[count][count1] + " and " + src[count][count1+1] + " on my pizza"
       count1 += 1
     end
     count+= 1
