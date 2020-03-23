@@ -49,4 +49,18 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  
+  total = 0
+  count = 0
+  while count < src.length do
+    count1 = 0
+    while count1 < src[count].length do
+      if src[count][count1] % 2 == 0
+        total += src[count][count]
+      end
+      count1 += 1
+    end
+    count+= 1
+  end
+  total
 end
